@@ -5,13 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in please:3</title>
+<style>
+#txtUsername {
+    color: red;
+    font-size: large;
+}
+
+.redText{
+    color: purple;
+    font-size: large;
+}
+input{
+ margin: 1rem;
+}
+#btnlogin:hover{
+    cursor: pointer;
+    background-color: #bebebe;
+    color: green;
+    font-size: large;
+}
+#btnlogin {
+    color: red;
+}
+
+
+    
+</style>
 
 </head>
 <body>
     <div style="text-align: center;">
         <h1 style="color: purple;">Login ka na wag ka na mahiya :]</h1>
-        <input type="text" placeholder="Username mo pare" id="txtUsername">
-        <input type="Password" placeholder="Bahala ka na sa password">
+        <input type="text" placeholder="Username mo pare" id="txtUsername" class="redText">
+        <input type="Password" placeholder="Bahala ka na sa password" class="redText">
+        <input type="text" placeholder="Username mo pare" id="txtUsername" class="redText">
+        <input type="Password" placeholder="Bahala ka na sa password" class="redText">
+        <input type="text" placeholder="Username mo pare" id="txtUsername" class="redText">
+        <input type="Password" placeholder="Bahala ka na sa password" class="redText">
+        <input type="text" placeholder="Username mo pare" id="txtUsername" class="redText">
+        <input type="Password" placeholder="Bahala ka na sa password" class="redText">
         
         <div style="margin-top: 1rem;">
             <button id="btnlogin" onclick="alert('Salamat Mabuhay ka hanggat gusto mo!.')">Login</button>
@@ -19,12 +51,11 @@
     </div>
 </body>
 
- 
 <script>
     console.log("Hello World");
     // declaring variable
     // let / var 
-    let buttonLogin = document.querySelector('#btnLogin');
+    let buttonLogin = document.getElementsByName('#btnLogin');
     buttonLogin.onclick = function () {
         alert("Salamat Mabuhay ka hanggat gusto mo!")
     };
